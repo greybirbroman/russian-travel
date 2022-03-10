@@ -1,0 +1,15 @@
+.footer__links {
+  display: inline-block;
+  margin-right: 19px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__links {
+    display: block;
+    margin: 0 0 32px 16px;
+  }
+
+  .footer__links:last-child {
+    margin: 0 0 0 16px;
+  }
+}

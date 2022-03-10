@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="vendor/normalize.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./vendor/normalize.css">
+  <link rel="stylesheet" href="./pages/index.css">
   <title>Путешествия по России</title>
 </head>
 
 <body class="body">
-  <div class="page__container">
+  <div class="page">
     <header class="header">
       <svg class="header__logo" width="176" height="52" viewBox="0 0 177 52" fill="none"
         xmlns="http://www.w3.org/2000/svg">
@@ -52,7 +52,7 @@
         <h1 class="lead__title">Путешествия<br>по России</h1>
         <h2 class="lead__subtitle">Настоящая страна не в выпусках&nbsp;
           новостей, а здесь.</h2>
-        <img class="lead__main-image" src="images/lead-polka.jpg" alt="Фотография в поезде">
+        <img class="lead__main-image" src="./images/lead-polka.jpg" alt="Фотография в поезде">
         <p class="lead__caption">ваша полка — верхняя</p>
       </section>
 
@@ -89,52 +89,52 @@
         </ul>
       </article>
 
-      <ul class="gallery">
-        <li class="photo__grid">
-          <img class="photo-grid__item" src="./images/photo-grid-train.jpg" alt="Фотография из окна поезда">
+      <ul class="photo">
+        <li>
+          <img class="photo__item" src="./images/photo-grid-train.jpg" alt="Фотография из окна поезда">
         </li>
-        <li class="photo__grid">
-          <img class="photo-grid__item" src="./images/photo-grid-atharva-tulsi.jpg" alt="Горный хребет">
+        <li>
+          <img class="photo__item" src="./images/photo-grid-atharva-tulsi.jpg" alt="Горный хребет">
         </li>
-        <li class="photo__grid">
-          <img class="photo-grid__item" src="./images/photo-grid-tuman.jpg" alt="Туманное поле">
+        <li>
+          <img class="photo__item" src="./images/photo-grid-tuman.jpg" alt="Туманное поле">
         </li>
-        <li class="photo__grid">
-          <img class="photo-grid__item" src="./images/photo-grid-sochi.jpg" alt="Лес в Сочи">
+        <li>
+          <img class="photo__item" src="./images/photo-grid-sochi.jpg" alt="Лес в Сочи">
         </li>
-        <li class="photo__grid">
-          <img class="photo-grid__item" src="./images/photo-grid-arisa.jpg" alt="Лёд на озере">
+        <li>
+          <img class="photo__item" src="./images/photo-grid-arisa.jpg" alt="Лёд на озере">
         </li>
-        <li class="photo__grid">
-          <img class="photo-grid__item" src="./images/photo-grid-baikal.jpg" alt="Летний Байкал">
+        <li>
+          <img class="photo__item" src="./images/photo-grid-baikal.jpg" alt="Летний Байкал">
         </li>
-        <li class="photo__grid">
-          <img class="photo-grid__item" src="./images/photo-grid-elbrus.jpg" alt="Эльбрус">
+        <li>
+          <img class="photo__item" src="./images/photo-grid-elbrus.jpg" alt="Эльбрус">
         </li>
-        <li class="photo__grid">
-          <img class="photo-grid__item" src="./images/photo-grid-kondratiev.jpg" alt="Фотография">
+        <li>
+          <img class="photo__item" src="./images/photo-grid-kondratiev.jpg" alt="Фотография">
         </li>
-        <li class="photo__grid">
-          <img class="photo-grid__item" src="./images/photo-grid-kamchatka-1.jpg" alt="Камчатка">
+        <li>
+          <img class="photo__item" src="./images/photo-grid-kamchatka-1.jpg" alt="Камчатка">
         </li>
-        <li class="photo__grid">
-          <img class="photo-grid__item" src="./images/photo-grid-kamchatka-2.jpg" alt="камчатка">
+        <li>
+          <img class="photo__item" src="./images/photo-grid-kamchatka-2.jpg" alt="камчатка">
         </li>
-        <li class="photo__grid">
-          <img class="photo-grid__item" src="./images/photo-grid-baikal-2.jpg" alt="Фотография окресностей Байкала">
+        <li>
+          <img class="photo__item" src="./images/photo-grid-baikal-2.jpg" alt="Фотография окресностей Байкала">
         </li>
-        <li class="photo__grid">
-          <img class="photo-grid__item" src="./images/photo-grid-ergaki.jpg" alt="Ержаки">
+        <li>
+          <img class="photo__item" src="./images/photo-grid-ergaki.jpg" alt="Ержаки">
         </li>
       </ul>
 
       <section class="places">
         <article class="place">
           <h2 class="place__title">Куршская коса</h2>
-          <img class="place__image" src="images/place-kosa.jpg" alt="Куршская коса">
+          <img class="place__image" src="./images/place-kosa.jpg" alt="Куршская коса">
           <div class="place__website">
-            <p class="website__url-heading">URL</p>
-            <a class="website__link" href="http://www.park-kosa.ru/" target="_blank">park-kosa.ru</a>
+            <p class="place__url-heading">URL</p>
+            <a class="place__link" href="http://www.park-kosa.ru/" target="_blank">park-kosa.ru</a>
           </div>
           <div class="place__text">
             <p class="place__paragraph">Здесь, посреди лесов и&nbsp;песчаных дюн, вы&nbsp;сможете увидеть два водных
@@ -143,7 +143,8 @@
               моря с&nbsp;другой.
               Уникальная природная зона на&nbsp;краю российского анклава.</p>
 
-            <p class="place__paragraph">На&nbsp;этом Калининградская область не&nbsp;заканчивается.<br>Для путешественника
+            <p class="place__paragraph">На&nbsp;этом Калининградская область не&nbsp;заканчивается.<br>Для
+              путешественника
               и
               исследователя там&nbsp;же по&nbsp;соседству&nbsp;&mdash; самая западная точка России, Балтийская
               коса,&nbsp;&mdash; и&nbsp;немецкое
@@ -155,8 +156,8 @@
         <article class="place">
           <h2 class="place__title">Кольский</h2>
           <div class="place__website">
-            <p class="website__url-heading">URL</p>
-            <a class="website__link" href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy"
+            <p class="place__url-heading">URL</p>
+            <a class="place__link" href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy"
               target="_blank">National Geographic</a>
           </div>
           <img class="place__image" src="./images/place-kolsky.jpg" alt="Кольский п-ов">
@@ -179,8 +180,8 @@
         <article class="place">
           <h2 class="place__title">Алтай</h2>
           <div class="place__website">
-            <p class="website__url-heading">URL</p>
-            <a class="website__link" href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822"
+            <p class="place__url-heading">URL</p>
+            <a class="place__link" href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822"
               target="_blank">Facebook</a>
           </div>
           <img class="place__image" src="./images/place-altai.jpg" alt="Алтай">
@@ -205,8 +206,8 @@
         <article class="place">
           <h2 class="place__title">Зимний Байкал</h2>
           <div class="place__website">
-            <p class="website__url-heading">URL</p>
-            <a class="website__link" href="https://vk.com/baikalmile" target="_blank">https://vk.com/baikalmile</a>
+            <p class="place__url-heading">URL</p>
+            <a class="place__link" href="https://vk.com/baikalmile" target="_blank">https://vk.com/baikalmile</a>
           </div>
           <img class="place__image" src="./images/place-winter-baikal.jpg" alt="Зимний Байкал">
           <div class="place__list">
@@ -225,8 +226,8 @@
         <article class="place">
           <h2 class="place__title">Карелия</h2>
           <div class="place__website">
-            <p class="website__url-heading">URL</p>
-            <a class="website__link" href="http://vodlozero.ru/" target="_blank">http://vodlozero.ru/</a>
+            <p class="place__url-heading">URL</p>
+            <a class="place__link" href="http://vodlozero.ru/" target="_blank">http://vodlozero.ru/</a>
           </div>
           <img class="place__image" src="./images/place-karelia.jpg" alt="Карелия">
           <div class="place__list">
@@ -249,6 +250,7 @@
           электричках.</p>
       </section>
     </main>
+
     <footer class="footer">
       <ul class="footer__list">
         <li class="footer__links">

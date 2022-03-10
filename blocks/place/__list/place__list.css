@@ -1,0 +1,4 @@
+.place__list {
+  grid-area: text;
+  list-style-type: none;
+}
