@@ -13,6 +13,8 @@
   min-height: 740px;
   max-height: 100%;
   z-index: 1;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 .cover::before {
