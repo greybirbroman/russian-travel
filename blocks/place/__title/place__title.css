@@ -23,10 +23,9 @@
   .place__title {
     font-size: 32px;
     line-height: 35px;
-    max-height: 35px;
     margin-left: 16px;
     margin-right: 0;
     max-width: 288px;
-    min-width: 288px
+    min-width: 288px;
   }
 }
